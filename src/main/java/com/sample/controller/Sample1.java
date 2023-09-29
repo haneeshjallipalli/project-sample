@@ -1,0 +1,91 @@
+package com.sample.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class Sample1 {
+	
+	@GetMapping("/")
+    public String sample1() 
+	{
+		return "<html><head><style>"
+				+ "body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #444; background-color: #f7f7f7; margin: 0; padding: 20px; }"
+	            + "h1, h2, h3 { color: #2188ff; }"
+	            + ".tool-section { background-color: #fff; padding: 20px; margin-bottom: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }"
+	            + ".tool-section h2 { color: #2188ff; font-size: 24px; margin-bottom: 10px; }"
+	            + ".tool-section ul { list-style-type: disc; margin-left: 20px; }"
+	            + ".tool-section ul li { color: #555; font-size: 16px; margin-bottom: 5px; }"
+	            + "</style></head>"
+	            + "<body>"
+                + "<h1>Welcome to the World of DevOps <> Develop faster & Run anywhere</h1>"
+                + "<div class='tool-section'>"
+                + "<h2>Docker</h2>"
+                + "<ul>"
+                + "<li>Consistency: Ensure your application runs consistently across different environments.</li>"
+                + "<li>Isolation: Containers keep your application and its dependencies isolated from the host system.</li>"
+                + "<li>Efficiency: Containers are lightweight and resource-efficient.</li>"
+                + "</ul>"
+                + "</div>"
+                + "<div class='tool-section'>"
+                + "<h2>Kubernetes</h2>"
+                + "<ul>"
+                + "<li>Scaling: Easily scale your application up or down based on demand.</li>"
+                + "<li>Load Balancing: Distribute traffic evenly across multiple containers.</li>"
+                + "<li>Self-healing: Automatically restart containers that fail.</li>"
+                + "</ul>"
+                + "</div>"
+                + "<div class='tool-section'>"
+                + "<h2>Jenkins</h2>"
+                + "<ul>"
+                + "<li>Continuous Integration: Automate the process of integrating code changes from multiple contributors.</li>"
+                + "<li>Continuous Deployment: Automatically deploy code to production after passing automated tests.</li>"
+                + "<li>Extensibility: Large ecosystem of plugins for various integrations and functionalities.</li>"
+                + "</ul>"
+                + "</div>"
+                + "<div class='tool-section'>"
+                + "<h2>Git</h2>"
+                + "<ul>"
+                + "<li>Version Control: Track changes to code and collaborate with other developers.</li>"
+                + "<li>Branching and Merging: Easily manage different branches of your codebase.</li>"
+                + "<li>Distributed Development: Enable multiple developers to work on the same project simultaneously.</li>"
+                + "</ul>"
+                + "</div>"
+                + "<div class='tool-section'>"
+                + "<h2>Terraform</h2>"
+                + "<ul>"
+                + "<li>Infrastructure as Code (IaC): Define and provision infrastructure using declarative configuration files.</li>"
+                + "<li>Resource Management: Easily manage cloud resources across multiple providers.</li>"
+                + "<li>Versioned Configurations: Keep track of changes and apply them consistently.</li>"
+                + "</ul>"
+                + "</div>"
+                + "<div class='tool-section'>"
+                + "<h2>Ansible</h2>"
+                + "<ul>"
+                + "<li>Automation: Automate configuration management, application deployment, and task execution.</li>"
+                + "<li>Agentless: No need to install agents on target systems.</li>"
+                + "<li>Idempotent: Ensure consistent system state regardless of the initial conditions.</li>"
+                + "</ul>"
+                + "</div>"
+                + "<div class='tool-section'>"
+                + "<h2>Prometheus</h2>"
+                + "<ul>"
+                + "<li>Monitoring: Collect metrics, alert on anomalies, and visualize performance data.</li>"
+                + "<li>Scalability: Supports a high volume of time series data.</li>"
+                + "<li>Alerting: Define rules to trigger alerts based on specific conditions.</li>"
+                + "</ul>"
+                + "</div>"
+                + "<div class='tool-section'>"
+                + "<h2>Grafana</h2>"
+                + "<ul>"
+                + "<li>Visualization: Create interactive and customizable dashboards to monitor metrics.</li>"
+                + "<li>Integration: Connects to various data sources including Prometheus.</li>"
+                + "<li>Alerting and Notifications: Set up alerts and receive notifications based on defined thresholds.</li>"
+                + "</ul>"
+                + "</div>"
+                + "</body></html>";
+	}
+        
+
+}
+
