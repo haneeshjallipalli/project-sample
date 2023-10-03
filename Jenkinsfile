@@ -24,9 +24,9 @@ agent any
   {
     steps
     {
-      sh 'sudo docker rm -f $(docker ps -aq) || true'
-      sh 'sudo docker build -t sample:latest .'
-      sh 'sudo docker run -d -p 8081:8080 --name=sample sample:latest'
+      sh 'docker rm -f $(docker ps -aq) || true'
+      sh 'docker build -t sample:latest .'
+      sh 'docker run -d -p 8081:8080 --name=sample sample:latest'
     }
   }
     
