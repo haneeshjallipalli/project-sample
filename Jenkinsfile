@@ -2,7 +2,7 @@ pipeline
 {
 agent any 
 
-  stages
+  stages{
   stage('git clone')
   {
     steps
@@ -18,5 +18,6 @@ agent any
       sh 'mvn install'
       sh 'mvn test'
     }
+  }
   }
 }
