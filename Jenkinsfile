@@ -25,6 +25,7 @@ agent any
     steps
     {
      // sh 'docker rm -f $(docker ps -aq) || true'
+      sh 'docker images'
       sh 'docker build -t sample:latest .'
       sh 'docker run -d -p 8081:8080 --name=sample sample:latest'
     }
